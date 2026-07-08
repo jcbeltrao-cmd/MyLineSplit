@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
       metaLines.textContent = linesArray.length.toLocaleString('pt-BR');
 
       // Show preview (first 20 lines)
-      const previewLines = linesArray.slice(0, 50).join('');
+      const previewLines = linesArray.slice(0, 60).join('');
       previewBox.textContent = previewLines;
 
       // Reveal preview area & enable splitting
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
       activeUrls.push(blobUrl);
 
       const partNumber = partIdx + 1;
-      const partFileName = `${partNumber}${baseName}_part${partNumber}${ext}`;
+      const partFileName = `${partNumber}_${baseName}_part${partNumber}${ext}`;
 
       // Create download card element
       const card = document.createElement('div');
